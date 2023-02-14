@@ -1,0 +1,77 @@
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>May Poem</title>
+    <style>
+      body {
+        background-image: url("peakpx.jpg");
+        background-size: cover;
+      }
+      .container {
+        margin: auto;
+        padding: 20px;
+        max-width: 600px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        display: none; /* hide the container by default */
+      }
+      h1 {
+        font-size: 36px;
+        color: rgb(255, 0, 221);
+        text-shadow: 2px 2px 5px pink;
+      }
+      p {
+        font-size: 24px;
+        color: #333;
+        line-height: 1.5;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      #reveal-button {
+        background-color: pink;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="reveal-button" onclick="revealPoem()">Click to reveal the May poem</button>
+    <div id="poem-container" class="container">
+      <h1>May Poem</h1>
+      <p>May, the month of blooms and light,</p>
+      <p>I'd love to share with you its sight,</p>
+      <p>Together we could stroll and play,</p>
+      <p>Enjoying the warmth of a spring day.</p>
+      <br>
+      <p>May, your presence is what I seek,</p>
+      <p>To walk with you and hear you speak,</p>
+      <p>In nature's beauty we'll bask,</p>
+      <p>And from the world's noise, we'll unmask.</p>
+      <br>
+      <p>So May, would you do me the honor,</p>
+      <p>And join me for a date to savor,</p>
+      <p>No pressure, no need to rush,</p>
+      <p>Just a chance for two hearts to crush.</p>
+    </div>
+    <script>
+      function revealPoem() {
+        var poemContainer = document.getElementById("poem-container");
+        var revealButton = document.getElementById("reveal-button");
+        poemContainer.style.display = "block"; // show the container
+        revealButton.style.display = "none"; // hide the button
+      }
+    </script>
+  </body>
+</html>
